@@ -17,30 +17,30 @@
    =============================== */
 
 .terminal-output {
-    -fx-fill: #E6D9F2; /* lavender-white output */
+    -fx-fill: #f8f8f2; /* Shades of Purple main text color (lavender-white) */
 }
 
 .terminal-input {
-    -fx-fill: #C792EA; /* soft lavender input */
+    -fx-fill: #bd93f9; /* SoP lavender input */
 }
 
 .terminal-method-record {
-    -fx-fill: #F2A1C2; /* rosy pink method calls */
+    -fx-fill: #50fa7b; /* SoP green for method calls */
 }
 
 .terminal-error {
-    -fx-fill: #FF5DA2; /* hot pink errors */
+    -fx-fill: #ff5555; /* SoP hot pink/red for errors */
 }
 
 .terminal-stack-link {
-    -fx-fill: #FF79C6; /* clickable pink */
-    -rtfx-underline-color: #FF5DA2;
+    -fx-fill: #ff79c6; /* SoP pink for clickable links */
+    -rtfx-underline-color: #ff79c6; /* underline matches link color */
     -rtfx-underline-width: 2;
     -fx-cursor: hand;
 }
 
 .terminal-stack-foreign {
-    -fx-fill: #6E6E8E; /* muted purple-grey */
+    -fx-fill: #6272a4; /* SoP muted purple-grey for foreign references */
 }
 
 /* ===============================
@@ -49,7 +49,7 @@
 
 /* Show prompt text even when focused */
 .terminal-input-field {
-    -fx-prompt-text-fill: #6E6E8E;
+    -fx-prompt-text-fill: #6272a4; /* muted purple-grey prompt */
 }
 
 /* ===============================
@@ -59,5 +59,5 @@
 /* Slight contrast from editor, still cohesive */
 .terminal,
 .terminal-error {
-    -fx-background-color: #120A1A; /* same deep plum as editor */
+    -fx-background-color: #282a36; /* SoP dark purple terminal background */
 }
