@@ -1,39 +1,63 @@
+/* ===============================
+   Terminal Layout
+   =============================== */
+
 /*
 .terminal .virtual-flow {
     -fx-gravity: rear;
 }
 */
+
 .terminal-split {
     -fx-orientation: vertical;
 }
+
+/* ===============================
+   Terminal Text Colors
+   =============================== */
+
 .terminal-output {
-    -fx-fill: rgb(180, 180, 180); /*modified*/
+    -fx-fill: #E6D9F2; /* lavender-white output */
 }
+
 .terminal-input {
-    -fx-fill: rgb(114, 163, 219); /*modified*/
+    -fx-fill: #C792EA; /* soft lavender input */
 }
+
 .terminal-method-record {
-    -fx-fill: rgb(160, 99, 99); /*modified*/
+    -fx-fill: #F2A1C2; /* rosy pink method calls */
 }
+
 .terminal-error {
-    -fx-fill: rgb(255, 122, 122); /*modified*/
+    -fx-fill: #FF5DA2; /* hot pink errors */
 }
+
 .terminal-stack-link {
-    -fx-fill: rgb(255, 179, 179); /*modified*/
-    -rtfx-underline-color: rgb(255, 122, 122); /*modified*/
+    -fx-fill: #FF79C6; /* clickable pink */
+    -rtfx-underline-color: #FF5DA2;
     -rtfx-underline-width: 2;
     -fx-cursor: hand;
 }
+
 .terminal-stack-foreign {
-    -fx-fill: hsb(0, 0%, 30%); /*modified*/
+    -fx-fill: #6E6E8E; /* muted purple-grey */
 }
 
-/* Show prompt text even when we are focused: */
+/* ===============================
+   Input Field
+   =============================== */
+
+/* Show prompt text even when focused */
 .terminal-input-field {
-    -fx-prompt-text-fill: hsb(0, 0%, 30%); /*modified*/
+    -fx-prompt-text-fill: #6E6E8E;
 }
 
-/* Slightly darker than white to make input field stand out: */
-.terminal, .terminal-error {
-    -fx-background-color: rgb(20, 20, 20); /*modified*/
+/* ===============================
+   Terminal Background
+   =============================== */
+
+/* Slight contrast from editor, still cohesive */
+.terminal,
+.terminal-error {
+    -fx-background-color: #120A1A; /* same deep plum as editor */
 }
