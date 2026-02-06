@@ -1,0 +1,63 @@
+/* ===============================
+   Terminal Layout
+   =============================== */
+
+/*
+.terminal .virtual-flow {
+    -fx-gravity: rear;
+}
+*/
+
+.terminal-split {
+    -fx-orientation: vertical;
+}
+
+/* ===============================
+   Terminal Text Colors
+   =============================== */
+
+.terminal-output {
+    -fx-fill: #f8f8f2; /* Shades of Purple main text color (lavender-white) */
+}
+
+.terminal-input {
+    -fx-fill: #bd93f9; /* SoP lavender input */
+}
+
+.terminal-method-record {
+    -fx-fill: #50fa7b; /* SoP green for method calls */
+}
+
+.terminal-error {
+    -fx-fill: #ff5555; /* SoP hot pink/red for errors */
+}
+
+.terminal-stack-link {
+    -fx-fill: #ff79c6; /* SoP pink for clickable links */
+    -rtfx-underline-color: #ff79c6; /* underline matches link color */
+    -rtfx-underline-width: 2;
+    -fx-cursor: hand;
+}
+
+.terminal-stack-foreign {
+    -fx-fill: #6272a4; /* SoP muted purple-grey for foreign references */
+}
+
+/* ===============================
+   Input Field
+   =============================== */
+
+/* Show prompt text even when focused */
+.terminal-input-field {
+    -fx-prompt-text-fill: #6272a4; /* muted purple-grey prompt */
+}
+
+/* ===============================
+   Terminal Background
+   =============================== */
+
+/* Slight contrast from editor, still cohesive */
+.terminal,
+.terminal-error {
+    -fx-background-color: #282a36; /* SoP dark purple terminal background */
+}

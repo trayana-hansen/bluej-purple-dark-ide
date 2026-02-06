@@ -1,0 +1,86 @@
+/* Keywords */
+.token-keyword1 {
+    -fx-fill: #C792EA; /* lavender (main keyword) */
+}
+.token-keyword2 {
+    -fx-fill: #7FBAFF; /* blue accent, matches Shades of Purple operators/functions */
+}
+.token-keyword3 {
+    -fx-fill: #FF79C6; /* pink accent, like SoP secondary keywords */
+}
+
+/* Comments */
+.token-comment-normal {
+    -fx-fill: #6272a4; /* muted purple-grey, like SoP comments */
+}
+.token-comment-javadoc {
+    -fx-fill: #8be9fd; /* bright cyan documentation, similar to SoP style */
+}
+.token-comment-special {
+    -fx-fill: #ff79c6; /* playful pink, matches SoP highlights */
+}
+
+/* Primitives & constants */
+.token-primitive {
+    -fx-fill: #8be9fd; /* cyan, SoP constant color */
+}
+.token-char-literal {
+    -fx-fill: #f1fa8c; /* yellow, SoP string/char */
+}
+.token-string-literal {
+    -fx-fill: #f1fa8c; /* same as char literals */
+}
+
+/* Variables and labels */
+.token-label {
+    -fx-fill: #50fa7b; /* green, SoP variable style */
+}
+.token-invalid {
+    -fx-fill: #ff5555; /* bright red for errors, SoP style */
+}
+.token-default {
+    -fx-fill: #f8f8f2; /* default text, white-ish like SoP */
+}
+
+/* Scope colors / editor background */
+.scope-colors {
+    -bj-background-color: #282a36; /* main background, SoP dark purple */
+
+    -bj-class-color: #44475a;
+    -bj-class-outer-color: #373844;
+    -bj-class-inner-color: #373844;
+
+    -bj-method-color: #44475a;
+    -bj-method-outer-color: #4b4268;
+
+    -bj-selection-color: #44475a;
+    -bj-selection-outer-color: #6272a4;
+
+    -bj-iteration-color: #3e3b5b;
+    -bj-iteration-outer-color: #4b4268;
+
+    -bj-breakpoint-overlay-color: rgba(255, 85, 85, 0.5); /* semi-transparent red */
+    -bj-step-overlay-color: rgba(124, 255, 212, 0.4);     /* semi-transparent cyan */
+}
+
+/* Step icons */
+.moe-step-mark-icon {
+    -fx-fill: #50fa7b; /* green, matches variable highlight */
+    -fx-stroke: #f8f8f2; /* white stroke */
+}
+
+/* Editor pane */
+.moe-editor-pane {
+    -fx-background-color: #282a36; /* dark purple SoP */
+    -fx-highlight-fill: rgba(255, 121, 198, 0.35); /* pinkish selection highlight */
+}
+
+/* Find result */
+.moe-find-result {
+    -fx-background-color: #44475a; /* darker purple for find highlights */
+}
+
+/* Caret / cursor */
+.moe-editor-pane .caret {
+   -fx-stroke: #ff79c6; /* pink cursor like SoP */
+}
